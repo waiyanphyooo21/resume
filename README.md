@@ -8,7 +8,7 @@ This project is a personal resume web page for Wai Yan Phyo Oo, built with only 
 
 ## 📸 Screenshots
  
-(images/preview.png)
+![](images/preview.png)
 
 ## Features
 - Responsive design

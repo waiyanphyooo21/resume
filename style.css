@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sidebar {
+    background: #15597f;
+    color: #fff;
+    width: 224px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-pic img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-bottom: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    margin: 24px 0 12px 0;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #fff2;
+    padding-bottom: 4px;
+    width: 100%;
+}
+
+.contact-list,
+.skills-list,
+.languages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.contact-list li {
+    margin: 10px 0;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list .icon {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.skills-list li {
+    margin-bottom: 12px;
+}
+
+.skills-list span {
+    display: block;
+    font-size: 0.98em;
+    margin-bottom: 2px;
+}
+
+.bar {
+    background: #fff2;
+    border-radius: 8px;
+    height: 7px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fill {
+    background: #fff;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.languages-list {
+    margin-top: 18px;
+}
+
+.languages-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.lang-name {
+    min-width: 90px;
+    display: inline-block;
+}
+
+.dots {
+    margin-left: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff2;
+    margin-right: 3px;
+}
+
+.dot.filled {
+    background: #fff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 38px 48px 38px 48px;
+}
+
+header h1 {
+    font-size: 2.3em;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #666;
+    margin: 0 0 24px 0;
+    letter-spacing: 2px;
+}
+
+.summary-section h2,
+.experience-section h2,
+.projects-section h2,
+.education-section h2 {
+    color: #1877a0;
+    font-size: 1.15em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 4px;
+}
+
+.summary-section ul {
+    margin: 0 0 0 18px;
+    padding: 0;
+}
+
+.summary-section li {
+    margin-bottom: 8px;
+    font-size: 1.05em;
+}
+
+.experience-section .job {
+    margin-bottom: 18px;
+}
+
+.job-title {
+    font-weight: 600;
+    font-size: 1.08em;
+    margin-bottom: 2px;
+}
+
+.company {
+    font-weight: 400;
+    color: #1877a0;
+    margin-left: 6px;
+}
+
+.job-date {
+    float: right;
+    color: #1877a0;
+    font-size: 0.98em;
+    font-weight: 500;
+    margin-top: -22px;
+}
+
+.job-desc {
+    margin-top: 6px;
+    font-size: 1em;
+    color: #444;
+}
+
+.projects-section .project {
+    margin-bottom: 18px;
+}
+
+.project-title {
+    font-weight: 600;
+    font-size: 1.05em;
+    margin-bottom: 2px;
+}
+
+.project-date {
+    float: right;
+    color: #1877a0;
+    font-size: 0.98em;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.projects-section ul {
+    margin: 0 0 0 18px;
+    padding: 0;
+}
+
+.projects-section li {
+    margin-bottom: 6px;
+    font-size: 1em;
+}
+
+.education-section .education {
+    margin-top: 10px;
+}
+
+.degree {
+    font-weight: 600;
+    font-size: 1.08em;
+}
+
+.school {
+    font-size: 1.05em;
+    color: #1877a0;
+    margin-bottom: 2px;
+}
+
+.edu-date {
+    font-size: 0.98em;
+    color: #1877a0;
+    margin-bottom: 2px;
+}
+
+.edu-desc {
+    font-size: 1em;
+    color: #444;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        max-width: 98vw;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 24px 8px;
+    }
+
+    .main-content {
+        padding: 24px 12px;
+    }
+}
+
+.footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.98em;
+    margin-top: 0;
+    padding: 0;
+}
